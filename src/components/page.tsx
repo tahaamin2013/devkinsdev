@@ -149,6 +149,7 @@ export default function HomepageCarousel() {
             priority
             className="object-contain mr-[100px] object-right-bottom mix-blend-screen"
           />
+          
         </div>
       </div>
 
