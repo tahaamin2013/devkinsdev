@@ -1,4 +1,4 @@
-"use client"
+ "use client"
 
 import type React from "react"
 
@@ -105,13 +105,16 @@ export default function JsonToCsvConverter() {
   }
 
   // Function to get nested value using dot notation (e.g., "user.address.city")
-  const getNestedValue = (obj: any, path: string) => {
+  const getNestedValue = (obj: Record<string, unknown>, path: string): unknown => {
     const keys = path.split(".")
-    return keys.reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj)
+    return keys.reduce(
+      (o, key) => (o && typeof o === "object" && key in o ? (o as Record<string, unknown>)[key] : null),
+      obj as unknown,
+    )
   }
 
   // Function to get all headers from an object, including nested objects with dot notation
-  const getHeadersFromObject = (obj: any, prefix = "") => {
+  const getHeadersFromObject = (obj: Record<string, unknown>, prefix = ""): string[] => {
     let headers: string[] = []
 
     Object.keys(obj).forEach((key) => {
@@ -120,7 +123,7 @@ export default function JsonToCsvConverter() {
 
       if (value !== null && typeof value === "object" && !Array.isArray(value)) {
         // Recursively get headers from nested objects
-        headers = [...headers, ...getHeadersFromObject(value, newKey)]
+        headers = [...headers, ...getHeadersFromObject(value as Record<string, unknown>, newKey)]
       } else {
         headers.push(newKey)
       }
@@ -285,7 +288,7 @@ export default function JsonToCsvConverter() {
           <CardContent>
             <Textarea
               placeholder='[{"name":"John","age":30},{"name":"Jane","age":25}]'
-              className="h-[300px] font-mono"
+              className="min-h-[300px] font-mono"
               value={jsonInput}
               onChange={(e) => setJsonInput(e.target.value)}
             />
