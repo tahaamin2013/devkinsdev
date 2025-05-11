@@ -13,7 +13,7 @@ const slides = [
     title: "Software Engineering",
     description:
       "Building robust, scalable software solutions with cutting-edge technologies to solve complex business challenges.",
-    bgColor: "bg-[#282a3e]",
+    bgColor: "bg-black",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1476&auto=format&fit=crop",
   },
   {
@@ -21,7 +21,7 @@ const slides = [
     title: "Product Design",
     description:
       "Designing innovative products that exceed your expectations, focused on quality, user experience and customer satisfaction. And therefore speeding up your growth.",
-    bgColor: "bg-[#282a3e]",
+    bgColor: "bg-black",
     heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop",
   },
   {
@@ -29,7 +29,7 @@ const slides = [
     title: "Data Science & AI",
     description:
       "Leveraging advanced analytics and artificial intelligence to extract valuable insights and drive data-informed decisions.",
-    bgColor: "bg-[#282a3e]",
+    bgColor: "bg-black",
     heroImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1470&auto=format&fit=crop",
   },
   {
@@ -37,19 +37,15 @@ const slides = [
     title: "Consulting",
     description:
       "Strategic guidance and expert advice to optimize your business processes, technology stack, and digital transformation journey.",
-    bgColor: "bg-[#282a3e]",
+    bgColor: "bg-black",
     heroImage: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1470&auto=format&fit=crop",
   },
 ]
 
-// Single professional woman image used across all slides
-
-
 export default function HomepageCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(1) // Start with Product Design
+  const [currentSlide, setCurrentSlide] = useState(1)
   const [isPlaying, setIsPlaying] = useState(true)
 
-  // Auto-advance slides when playing
   useEffect(() => {
     if (!isPlaying) return
 
@@ -80,7 +76,7 @@ export default function HomepageCarousel() {
             currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0",
           )}
         >
-          {/* Hero image - positioned to fill the entire slide */}
+          {/* Hero image */}
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <Image
               src={slide.heroImage || "/placeholder.svg"}
@@ -89,20 +85,19 @@ export default function HomepageCarousel() {
               priority
               className="object-cover object-center filter blur-[2px]"
             />
-            <div className="absolute inset-0 bg-[#282a3e]/70"></div>
+            <div className="absolute inset-0 bg-black/70"></div>
           </div>
 
           <div className="relative w-full h-full px-6 md:px-12 lg:px-20 py-12">
-            {/* Background design elements */}
-            <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-indigo-900/20 -translate-x-1/2 -translate-y-1/2"></div>
+            {/* Updated from indigo to #07b6d5 shade */}
+            <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#07b6d5]/20 -translate-x-1/2 -translate-y-1/2"></div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-              {/* Left content */}
               <div className="flex flex-col justify-center z-10">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{slide.title}</h2>
-                <p className="text-gray-300 mb-8 max-w-lg">{slide.description}</p>
+                <p className="text-gray-100 mb-8 max-w-lg">{slide.description}</p>
                 <div>
-                  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-full px-8">
+                  <Button className="bg-[#07b6d5] hover:bg-[#069fc1] text-white font-medium rounded-full px-8">
                     Learn more
                   </Button>
                 </div>
@@ -144,11 +139,11 @@ export default function HomepageCarousel() {
         </div>
       ))}
 
-      {/* Single professional woman image - positioned on the right side, outside the slides */}
+      {/* Right image */}
       <div className="absolute right-0 bottom-0 top-0 z-30 hidden md:block">
         <div className="relative h-full w-[500px]">
           <Image
-            src='/girl.png'
+            src="/girl.png"
             alt="Professional"
             fill
             priority
@@ -157,10 +152,9 @@ export default function HomepageCarousel() {
         </div>
       </div>
 
-      {/* Bottom navigation bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-40 bg-[#282a3e]/80 backdrop-blur-sm">
+      {/* Navigation bar */}
+      <div className="absolute bottom-0 left-0 right-0 z-40 bg-[#07b6d5]/40 backdrop-blur-sm">
         <div className="flex items-center">
-          {/* Play/Pause button */}
           <Button
             variant="ghost"
             size="icon"
@@ -171,7 +165,6 @@ export default function HomepageCarousel() {
             <span className="sr-only">{isPlaying ? "Pause" : "Play"} slideshow</span>
           </Button>
 
-          {/* Navigation tabs */}
           <div className="flex-1 grid grid-cols-4">
             {slides.map((slide, index) => (
               <button
@@ -181,7 +174,7 @@ export default function HomepageCarousel() {
                   "py-4 text-center transition-all border-t-2 text-sm md:text-base",
                   currentSlide === index
                     ? "text-white border-white font-medium"
-                    : "text-gray-400 border-transparent hover:text-gray-200",
+                    : "text-gray-200 border-transparent hover:text-gray-200",
                 )}
               >
                 {slide.title}
