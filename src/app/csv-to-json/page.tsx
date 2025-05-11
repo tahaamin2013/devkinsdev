@@ -151,7 +151,7 @@ export default function JsonToCsvConverter() {
         <h2 className="text-lg font-medium mb-2">How to use:</h2>
         <ol className="list-decimal pl-5 space-y-2">
           <li>Paste your JSON data in the input field (array of objects works best)</li>
-          <li>Click the "Convert to CSV" button</li>
+          <li>Click the Convert to CSV button</li>
           <li>View the converted CSV in the output field</li>
           <li>Download the CSV file using the download button</li>
         </ol>
