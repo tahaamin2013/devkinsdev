@@ -42,6 +42,9 @@ const slides = [
   },
 ]
 
+// Single professional woman image used across all slides
+
+
 export default function HomepageCarousel() {
   const [currentSlide, setCurrentSlide] = useState(1) // Start with Product Design
   const [isPlaying, setIsPlaying] = useState(true)
@@ -89,13 +92,13 @@ export default function HomepageCarousel() {
             <div className="absolute inset-0 bg-[#282a3e]/70"></div>
           </div>
 
-          <div className="relative w-full h-full px-6 md:px-12 lg:px-20 py-12 flex flex-col">
+          <div className="relative w-full h-full px-6 md:px-12 lg:px-20 py-12">
             {/* Background design elements */}
             <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-indigo-900/20 -translate-x-1/2 -translate-y-1/2"></div>
 
-            <div className="flex flex-col justify-center h-full max-w-2xl">
-              {/* Content */}
-              <div className="z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+              {/* Left content */}
+              <div className="flex flex-col justify-center z-10">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{slide.title}</h2>
                 <p className="text-gray-300 mb-8 max-w-lg">{slide.description}</p>
                 <div>
@@ -141,8 +144,21 @@ export default function HomepageCarousel() {
         </div>
       ))}
 
+      {/* Single professional woman image - positioned on the right side, outside the slides */}
+      <div className="absolute right-0 bottom-0 top-0 z-30 hidden md:block">
+        <div className="relative h-full w-[500px]">
+          <Image
+            src='/girl.png'
+            alt="Professional"
+            fill
+            priority
+            className="object-contain mr-[100px] object-right-bottom mix-blend-screen"
+          />
+        </div>
+      </div>
+
       {/* Bottom navigation bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-[#282a3e]/80 backdrop-blur-sm">
+      <div className="absolute bottom-0 left-0 right-0 z-40 bg-[#282a3e]/80 backdrop-blur-sm">
         <div className="flex items-center">
           {/* Play/Pause button */}
           <Button
