@@ -15,6 +15,7 @@ const slides = [
       "Building robust, scalable software solutions with cutting-edge technologies to solve complex business challenges.",
     bgColor: "bg-black",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1476&auto=format&fit=crop",
+    heroImage2: "/girl.png",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const slides = [
     description:
       "Designing innovative products that exceed your expectations, focused on quality, user experience and customer satisfaction. And therefore speeding up your growth.",
     bgColor: "bg-black",
+    heroImage2: "/boy.png",
     heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop",
   },
   {
@@ -30,6 +32,7 @@ const slides = [
     description:
       "Leveraging advanced analytics and artificial intelligence to extract valuable insights and drive data-informed decisions.",
     bgColor: "bg-black",
+    heroImage2: "/girl2.png",
     heroImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1470&auto=format&fit=crop",
   },
   {
@@ -38,6 +41,7 @@ const slides = [
     description:
       "Strategic guidance and expert advice to optimize your business processes, technology stack, and digital transformation journey.",
     bgColor: "bg-black",
+    heroImage2: "/boy2.png",
     heroImage: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1470&auto=format&fit=crop",
   },
 ]
@@ -85,7 +89,7 @@ export default function HomepageCarousel() {
               priority
               className="object-cover object-center filter blur-[2px]"
             />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
           </div>
 
           <div className="relative w-full h-full px-6 md:px-12 lg:px-20 py-12">
@@ -143,13 +147,12 @@ export default function HomepageCarousel() {
       <div className="absolute right-0 bottom-0 top-0 z-30 hidden md:block">
         <div className="relative h-full w-[500px]">
           <Image
-            src="/girl.png"
+            src={slides[currentSlide]?.heroImage2 || "/placeholder.svg"}
             alt="Professional"
             fill
             priority
-            className="object-contain mr-[100px] object-right-bottom mix-blend-screen"
+            className="object-contain pr-[100px] object-right-bottom mix-blend-screen"
           />
-          
         </div>
       </div>
 
