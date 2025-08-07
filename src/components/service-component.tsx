@@ -1,5 +1,4 @@
 "use client"
-import { useRef } from "react"
 import Link from "next/link"
 import { Check } from "lucide-react"
 

@@ -18,7 +18,7 @@ export default function DevicesPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-xl font-bold">📍 Mobile's Live Location</h1>
+      <h1 className="text-xl font-bold">📍 Mobiles Live Location</h1>
       {location ? (
         <div>
           <p>Latitude: {location.lat}</p>
