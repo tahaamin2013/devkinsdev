@@ -51,6 +51,7 @@
     "@types/color-convert": "^2.0.4",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.17",
+    "@types/number-to-words": "^1.2.3",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
