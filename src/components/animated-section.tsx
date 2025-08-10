@@ -4,7 +4,7 @@
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
-const animationVariants: any = {
+const animationVariants = {
   fadeIn: {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
