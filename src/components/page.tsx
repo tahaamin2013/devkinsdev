@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { CaseStudy } from "./ui/case-study"
 import TeamSection from "./team_section"
+import { AnimatedSection } from "./animated-section"
 
 const projects = [
   {
@@ -112,7 +113,7 @@ const slides = [
     description:
       "Designing innovative products that exceed your expectations, focused on quality, user experience and customer satisfaction. And therefore speeding up your growth.",
     bgColor: "bg-white dark:bg-black dark:text-white",
-    heroImage2: "/bo.png",
+    heroImage2: "/Man1.jpg",
     heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop",
     Photo: "/Yveslupitu.png",
 
@@ -123,7 +124,7 @@ const slides = [
     description:
       "Leveraging advanced analytics and artificial intelligence to extract valuable insights and drive data-informed decisions.",
     bgColor: "bg-white dark:bg-black dark:text-white",
-    heroImage2: "/girl2.png",
+    heroImage2: "/girl2.jpg",
     heroImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1470&auto=format&fit=crop",
     Photo: "/Yveslupitu.png",
 
@@ -207,38 +208,6 @@ export default function HomepageCarousel() {
                     Learn more
                   </Button>
                 </div>
-
-                {/* Trust badges */}
-                <div className="mt-12 flex flex-wrap items-center gap-6">
-                  <Image
-                    src="https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=1470&auto=format&fit=crop"
-                    alt="Partner badge"
-                    width={80}
-                    height={40}
-                    className="opacity-80 hover:opacity-100 transition-opacity h-8 w-auto object-contain"
-                  />
-                  <Image
-                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop"
-                    alt="Forbes"
-                    width={100}
-                    height={40}
-                    className="opacity-80 hover:opacity-100 transition-opacity h-8 w-auto object-contain"
-                  />
-                  <Image
-                    src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1374&auto=format&fit=crop"
-                    alt="Clutch rating"
-                    width={80}
-                    height={40}
-                    className="opacity-80 hover:opacity-100 transition-opacity h-8 w-auto object-contain"
-                  />
-                  <Image
-                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=1469&auto=format&fit=crop"
-                    alt="ISO certification"
-                    width={80}
-                    height={40}
-                    className="opacity-80 hover:opacity-100 transition-opacity h-8 w-auto object-contain"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -293,13 +262,20 @@ export default function HomepageCarousel() {
         </div>
       </div>
     </div>
+          <AnimatedSection animationType="slideFromRight">
+    
 <TeamSection />
+</AnimatedSection>
        <div className="container mx-auto px-4 py-12 md:py-24">
+          <AnimatedSection animationType="slideFromLeft">
+
       <CaseStudy
         projects={projects}
         onDetailsClick={(projectId) => console.log(`Details clicked for project ${projectId}`)}
         onAllCasesClick={() => console.log("All cases clicked")}
       />
+</AnimatedSection>
+      
     </div>
  </>
   )

@@ -11,7 +11,7 @@
     
     export default function ContactForm() {
       const [formData, setFormData] = useState({
-        name: "",
+        name: "", 
         phone: "",
         email: "",
         industry: "",

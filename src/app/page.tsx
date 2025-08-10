@@ -1,6 +1,8 @@
 import AboutSection from "@/components/about";
+import { AnimatedSection } from "@/components/animated-section";
 import CoreTechnologies from "@/components/core-technologies";
 import ContactForm from "@/components/EmailForm";
+import OurStory from "@/components/our-story";
 // import MeetPrincipals from "@/components/Meetour";
 import HomepageCarousel from "@/components/page";
 import ProductivitySection from "@/components/productivity-section";
@@ -13,14 +15,37 @@ export default function Home() {
     <div >
       <HomepageCarousel />
       {/* <MeetPrincipals />  */}
-<ServicesSection />
+ <AnimatedSection animationType="fadeIn">
+        <ServicesSection />
+      </AnimatedSection>
 
-      <AboutSection />
-      <CoreTechnologies />
-      <ProductivitySection />
-      <ReviewsSection />
-            <WhyChooseSection />
-      <ContactForm />
+      <AnimatedSection animationType="slideFromLeft">
+        <AboutSection />
+      </AnimatedSection>
+
+      <AnimatedSection animationType="slideFromRight">
+        <CoreTechnologies />
+      </AnimatedSection>
+
+      <AnimatedSection animationType="zoomIn">
+        <ProductivitySection />
+      </AnimatedSection>
+
+        <AnimatedSection animationType="zoomIn">
+          <OurStory />
+        </AnimatedSection>
+
+      <AnimatedSection animationType="rotateIn">
+        <ReviewsSection />
+      </AnimatedSection>
+
+      <AnimatedSection animationType="fadeIn">
+        <WhyChooseSection />
+      </AnimatedSection>
+
+      <AnimatedSection animationType="slideFromLeft">
+        <ContactForm />
+      </AnimatedSection>
     </div>
   );
 }

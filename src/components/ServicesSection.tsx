@@ -44,7 +44,7 @@ export default function ServicesSection() {
   const currentService = services.find((service) => service.id === activeService)
 
   return (
-    <section className="min-h-screen bg-background text-foreground py-16 px-4 md:px-6 lg:px-8 relative overflow-hidden">
+    <section className="min-h-screen  bg-background text-foreground py-16 px-4 md:px-6 lg:px-8 relative overflow-hidden">
       {/* Blurry Circles in Background */}
       <div className="absolute bottom-10 right-[100px] w-96 h-96 bg-accent-teal opacity-20 rounded-full filter blur-2xl -z-10"></div>
       <div className="absolute top-20 left-[50px] w-80 h-80 bg-accent-teal opacity-15 rounded-full filter blur-2xl -z-10"></div>

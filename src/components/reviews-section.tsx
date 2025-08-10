@@ -5,47 +5,26 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useState } from 'react' // Import useState for managing component state
 
 const reviews = [
+ 
   {
-    text: `Our team's productivity soared with this messaging tool. Its simplicity fosters quick decision-making and seamless collaboration, essential for our fast-paced product development.`,
-    name: "Emily Rodriguez",
-    company: "PinPoint",
-    avatar: "/placeholder.svg?height=40&width=40",
-    fallback: "ER",
-    logoAlt: "PinPoint Logo"
-  },
-  {
-    text: `With this tool, our team's workflow has become more efficient and organized. We spend less time navigating complex interfaces and more time focusing on what matters: delivering quality products to our customers.`,
-    name: "David Patel",
-    company: "Hues",
-    avatar: "/placeholder.svg?height=40&width=40",
-    fallback: "DP",
-    logoAlt: "Hues Logo"
-  },
-  {
-    text: `The intuitive design and robust features have made communication effortless for our distributed team.`,
-    name: "Sophia Lee",
-    company: "BrightTech",
+    text: `Excellent work with a user-friendly email creator
+`,
+    name: "Jodel",
+    company: "Thryve.today",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "SL",
     logoAlt: "BrightTech Logo"
   },
   {
-    text: `We love how easy it is to onboard new members and keep everyone in sync.`,
-    name: "Michael Chen",
-    company: "Syncro",
+    text: `Phanstastic and professional work from Devkins. I will continue to work with them toget. Thank you very much also for your advise and suggestion.`,
+    name: "Yveslupitu",
+    company: "Yves lupitu",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "MC",
     logoAlt: "Syncro Logo"
   },
-  {
-    text: `A game-changer for our remote collaboration. Highly recommended!`,
-    name: "Ava Smith",
-    company: "RemotePro",
-    avatar: "/placeholder.svg?height=40&width=40",
-    fallback: "AS",
-    logoAlt: "RemotePro Logo"
-  },
-  {
+
+   {
     text: `The support team is responsive and always ready to help. Great experience overall.`,
     name: "Liam Johnson",
     company: "HelpDesk",
@@ -53,38 +32,139 @@ const reviews = [
     fallback: "LJ",
     logoAlt: "HelpDesk Logo"
   },
+    {
+    text: `Devkins was great!`,
+    name: "Benfallon Psych",
+    company: " ",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "DP",
+    logoAlt: "Hues Logo"
+  },
   {
-    text: `Our meetings are more productive and focused thanks to this tool.`,
-    name: "Olivia Brown",
-    company: "Meetly",
+    text: `Thank you for the amazing result! Will keep using more and more.`,
+    name: "Imperialkb",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "AS",
+    logoAlt: "RemotePro Logo"
+  },
+ 
+    {
+    text: `Super arbeit gerne wieder. Kann ich jedem empfehlen der probleme mit excel hat`,
+    name: "Tobias Koblenz",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "AS",
+    logoAlt: "RemotePro Logo"
+  },
+ 
+
+  {
+    text: `It's been an amazing time working Devkins. Keep up the good work. I will be reaching out very soon`,
+    name: "Lui Becker",
+    company: "",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "OB",
     logoAlt: "Meetly Logo"
   },
   {
-    text: `Simple, effective, and reliable. It just works!`,
-    name: "Noah Wilson",
+    text: `they has been very professional, and they immediately figured out my idea and helped me make it happen.`,
+    name: "Wmanuele Maugeri",
     company: "SimpleSoft",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "NW",
     logoAlt: "SimpleSoft Logo"
   },
-  {
-    text: `The best messaging platform we've used so far.`,
-    name: "Emma Davis",
-    company: "Connectify",
+
+    {
+    text: `Exceptional work, delivered the work well before time. Would love to work with them again.`,
+    name: "ozyrod1984",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+
+     {
+    text: `10/10. I'm truly impressed by  work—if you need any Excel assistance, they's the go-to person!`,
+    name: "Davey Bacaron",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+       {
+    text: `Thanks a lot for your good work`,
+    name: "Kaseb Daco",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+
+        {
+    text: `Fantastic work and did a wonderful job with requested edits`,
+    name: "igurumarketing",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+
+      {
+    text: `Great working with Excel Guru, qualify product delivered for my project!`,
+    name: "mfbron13",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+        {
+    text: `5 ★ Excellent work! I hired this seller to build my Client Progress Dashboard—an automated ITP/ABLLS-style tracking theyet—and they went above and beyond. They: Followed every instruction (and helped me refine my ideas when I changed my mind) Communicated clearly in English and were easy to understand Even created a “How to Use” help theyet that wasn’t in the original scope The result is absolutely perfect. I’ll definitely return for future projects! `,
+    name: "leacochran",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+    {
+    text: `Effective & Efficient service creating an automation formula on my theyet with adjustments, which will help me be more effective and at a faster pace. Polite, fast & with an instructional video to assist, will return and work with Devkins again.`,
+    name: "richexperia",
+    company: "",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ED",
+    logoAlt: "Connectify Logo"
+  },
+
+
+
+  
+
+
+     {
+    text: `Exceptional Work – Highly Recommended! I had an amazing experience working with them! They delivered an outstanding Excel project with incredible attention to detail, accuracy, and speed. The quality of work was far beyond my expectations – everything was structured, clear, and tailored perfectly`,
+    name: "Ahmad Ghafoor",
+    company: "",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "ED",
     logoAlt: "Connectify Logo"
   },
   {
-    text: `It keeps our team connected and our projects on track.`,
-    name: "William Martinez",
-    company: "TrackIt",
+    text: `Devkins did an INCREDIBLE job on our data visualization project!  professionalism, attention to detail, and proactive communication truly exceeded my expectations. It's a game-changer for my team and me this season. I've worked with many vendors, but Devkins is SECOND TO NONE. 🙌`,
+    name: "Elite Bookkeeper",
+    company: "",
     avatar: "/placeholder.svg?height=40&width=40",
     fallback: "WM",
     logoAlt: "TrackIt Logo"
-  }
+  },
+     {
+    text: `Devkins was exceptional in transforming our typeform forms to tally and seamlessly integrating them with Pipedrive, which was not an easy fix and required complicated coding. His professionalism and thorough documentation made the entire process a breeze. With his quick delivery and proactive communication, I'm thrilled to have worked with someone who deeply understands our needs - would gladly collaborate again and it seems like we will be! 👏`,
+    name: "Karina Assaf",
+    company: " ",
+    avatar: "/placeholder.svg?height=40&width=40",
+    fallback: "ER",
+    logoAlt: "PinPoint Logo"
+  },
 ]
 
 export default function ReviewsSection() {

@@ -127,7 +127,6 @@ const ServiceComponent = ({
 
       {/* Features */}
       <div className="mt-[40px] flex flex-col md:flex-row px-6 sm:px-[70px]">
-        <div className="rounded-2xl object-cover w-[500px] h-[400px] bg-cyan-500"></div>
         <div className="flex flex-col gap-[30px] ml-5 mt-6 md:mt-0">
           {features.map((feature, index) => (
             <div
