@@ -6,7 +6,7 @@ import { Pause, Play } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { CaseStudy } from "./ui/case-study"
-import TeamSection from "./team_section"
+// import TeamSection from "./team_section"
 import { AnimatedSection } from "./animated-section"
 
 const projects = [
@@ -262,10 +262,10 @@ export default function HomepageCarousel() {
         </div>
       </div>
     </div>
-          <AnimatedSection animationType="slideFromRight">
+          {/* <AnimatedSection animationType="slideFromRight"> */}
     
-<TeamSection />
-</AnimatedSection>
+{/* <TeamSection /> */}
+{/* </AnimatedSection> */}
        <div className="container mx-auto px-4 py-12 md:py-24">
           <AnimatedSection animationType="slideFromLeft">
 
