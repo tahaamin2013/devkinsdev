@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import Head from "next/head";
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],   
+  subsets: ["latin"],    
   variable: "--font-space-grotesk",
 });
 
