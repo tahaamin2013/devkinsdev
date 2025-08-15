@@ -180,7 +180,12 @@ const DEVELOPMENT_SECTIONS: SectionData[] = [
   title: "AI Leaderboard",
   description: "Explore top AI models ranked by performance, benchmarks, and real-world evaluations.",
   href: "https://lmarena.ai/leaderboard",
+},{
+  title: "Top Technology Trends 2025",
+  description: "Discover Gartner’s insights on the biggest technology trends shaping 2025 and beyond.",
+  href: "https://www.gartner.com/en/articles/top-technology-trends-2025",
 }
+
 
 
     ],
