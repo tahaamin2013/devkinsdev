@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/header/navbar";
 import ThemeContextProvider from "@/context/ThemeContext";
 import Footer from "@/components/footer";
+import Head from "next/head";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -25,6 +26,13 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} dark:text-white overflow-x-hidden antialiased`}
       >
+        <Head>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
+
+        </Head>
+
         <ThemeContextProvider>
           <Navbar />
           {children}

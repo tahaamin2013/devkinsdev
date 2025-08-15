@@ -9,10 +9,17 @@ import ProductivitySection from "@/components/productivity-section";
 import ReviewsSection from "@/components/reviews-section";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseSection from "@/components/why-choose-section";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div >
+            <Head>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
+
+        </Head>
       <HomepageCarousel />
       {/* <MeetPrincipals />  */}
  <AnimatedSection animationType="fadeIn">

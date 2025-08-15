@@ -58,41 +58,33 @@ const projects = [
     ],
     Photo: ["/beautybugs.png"],
   },
-    {
-    id: 5,
-    title: "Beauty Bugs - Beauty Industry",
-    description:
-      "An innovative platform for the beauty industry, offering tools for enhanced customer engagement, streamlined operations, and optimized performance for beauty professionals and businesses.",
-    skills: [
-      "UI/UX Design",
-      "Web Development",
-      "Performance Optimization",
-    ],
-    Photo: ["/beautybugs.png"],
-  },
-    {
+
+  {
     id: 6,
-    title: "Beauty Bugs - Beauty Industry",
+    // Removed title and description, added new ones for Pittsburgh Window Direct
+    title: "Pittsburgh Window Direct",
     description:
-      "An innovative platform for the beauty industry, offering tools for enhanced customer engagement, streamlined operations, and optimized performance for beauty professionals and businesses.",
+      "A modern website for Pittsburgh Window Direct, a company specializing in selling and installing high-quality windows for homes and businesses.",
     skills: [
       "UI/UX Design",
       "Web Development",
       "Performance Optimization",
     ],
-    Photo: ["/beautybugs.png"],
+    Photo: ["/screencapture-pittsburghwindowdirect-2025-08-12-07_46_12"],
   },
+
     {
     id: 7,
-    title: "Beauty Bugs - Beauty Industry",
+    // Removed title and description, added new ones for Pittsburgh Window Direct
+    title: "The Salty Peach",
     description:
-      "An innovative platform for the beauty industry, offering tools for enhanced customer engagement, streamlined operations, and optimized performance for beauty professionals and businesses.",
+      "        ",
     skills: [
       "UI/UX Design",
       "Web Development",
       "Performance Optimization",
     ],
-    Photo: ["/beautybugs.png"],
+    Photo: ["/The salty peach.png"],
   },
 ];
 const slides = [
