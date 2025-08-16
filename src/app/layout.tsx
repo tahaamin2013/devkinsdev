@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Devkins (Private Limited)",
+  title: "Devkins (Private) Limited",
   description: "Devkins",
 };
 
