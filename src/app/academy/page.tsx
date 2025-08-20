@@ -129,6 +129,11 @@ const DEVELOPMENT_SECTIONS: SectionData[] = [
         description: "For entities and seo phrases",
         href: "https://topicalrelevance.com/lsi-entities-google/",
       },
+   {
+  title: "IndexNow",
+  description: "Instant indexing protocol for search engines",
+  href: "https://www.indexnow.org/",
+},
     ],
   },
   {
