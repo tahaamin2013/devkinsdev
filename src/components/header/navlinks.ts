@@ -97,6 +97,7 @@ export const navlinks = {
     { name: "Tools", href: "/tools", hasDropdown: false },
     { name: "About Us", href: "/about", hasDropdown: false },
     { name: "Contact", href: "/contact", hasDropdown: false },
+    { name: "Projects", href: "/projects", hasDropdown: false },
   ],
   // userMenuItems: [
   //   { name: "Profile", href: "/profile" },

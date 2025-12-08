@@ -34,15 +34,15 @@ const projects = [
     image: "/Greaththing.png",
     website: "https://greatthink.com",
   },
-  {
-    id: 4,
-    title: "Beauty Bugs - Beauty Industry",
-    description:
-      "An innovative platform for the beauty industry, offering tools for enhanced customer engagement, streamlined operations, and optimized performance for beauty professionals and businesses.",
-    skills: ["UI/UX Design", "Web Development", "Performance Optimization"],
-    image: "/beautybugs.png",
-    website: "https://beautybugs.com",
-  },
+  // {
+  //   id: 4,
+  //   title: "Beauty Bugs - Beauty Industry",
+  //   description:
+  //     "An innovative platform for the beauty industry, offering tools for enhanced customer engagement, streamlined operations, and optimized performance for beauty professionals and businesses.",
+  //   skills: ["UI/UX Design", "Web Development", "Performance Optimization"],
+  //   image: "/beautybugs.png",
+  //   website: "https://beautybugs.com",
+  // },
   {
     id: 6,
     title: "Pittsburgh Window Direct",
@@ -54,20 +54,39 @@ const projects = [
   },
   {
     id: 7,
-    title: "The Salty Peach",
+    title: "Sajid Al-Qari",
     description:
-      "A beautifully designed brand website featuring elegant UI/UX, modern web development practices, and optimized performance.",
-    skills: ["UI/UX Design", "Web Development", "Performance Optimization"],
-    image: "/The salty peach.png",
-    website: "https://thesaltypeach.com",
+      "A personal portfolio website showcasing projects and expertise in web development and design.",
+    skills: ["Web Development", "UI/UX Design", "Portfolio"],
+    image: "/sajid-al-qari.png",
+    website: "https://sajid-al-qari.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Patrick Stock Management",
+    description:
+      "A comprehensive stock management system designed for efficient inventory tracking, organization, and real-time stock updates.",
+    skills: ["Web Development", "Backend Development", "Database Management"],
+    image: "/patrick-stock-management.png",
+    website: "https://patrick-stock-management.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Carpet Area Calculator",
+    description:
+      "An intuitive tool for calculating carpet area in various room shapes, helping users make informed decisions for flooring and interior design.",
+    skills: ["Web Development", "UI/UX Design", "Responsive Design"],
+    image: "/carpet-area-calculator.png",
+    website: "https://carpet-area-calculator.vercel.app/",
+  },
+ 
 ]
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background to-background/50 text-foreground">
+    <main className="min-h-screen mt-10 bg-gradient-to-b from-background to-background/50 text-foreground">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="text-center mb-20 space-y-6 animate-fade-in">
+        <div className="text-center mb-10 space-y-6 animate-fade-in">
           <div className="inline-block">
             <span className="text-sm font-semibold text-primary/80 uppercase tracking-widest animate-slide-up">
               Featured Work
@@ -94,8 +113,25 @@ export default function ProjectsPage() {
               <ProjectCard project={project} />
             </div>
           ))}
+           
         </div>
       </div>
+      <div className=" px-4 py-16 sm:px-6 lg:px-8">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
+          KASA Sports Dashboard For Saudia Ministry
+        </h1>
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl text-balance leading-relaxed">
+          A comprehensive sports analytics dashboard developed for the Saudi Ministry, providing real-time data visualization, performance metrics, and strategic insights to optimize sports management and athlete development across the kingdom.
+        </p>
+      </div>
+       <video
+                                                src='/ksa.mp4'
+                                                className="w-screen h-full object-cover"
+                                                autoPlay
+                                                controls
+                                                muted
+                                                loop
+                                        />
     </main>
   )
 }
