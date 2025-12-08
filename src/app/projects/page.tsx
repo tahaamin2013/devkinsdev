@@ -118,7 +118,7 @@ export default function ProjectsPage() {
       </div>
       <div className=" px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
-          KASA Sports Dashboard For Saudia Ministry
+          KSA SportsScope Dashboard For Saudia Ministry
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl text-balance leading-relaxed">
           A comprehensive sports analytics dashboard developed for the Saudi Ministry, providing real-time data visualization, performance metrics, and strategic insights to optimize sports management and athlete development across the kingdom.
