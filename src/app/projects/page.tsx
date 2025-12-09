@@ -79,7 +79,22 @@ const projects = [
     image: "/carpet-area-calculator.png",
     website: "https://carpet-area-calculator.vercel.app/",
   },
- 
+{
+  id: 5,
+  title: "Costantini Watches — Luxury Watch Boutique",
+  description: "E-commerce storefront for high-end luxury watches (Rolex, Omega, Patek Philippe). Features: elegant product galleries, quick view, brand & price filters, secure checkout, responsive layout and SEO optimised product pages to showcase premium inventory.",
+  skills: [
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "E-commerce (Shopify / Headless)",
+    "UI/UX Design",
+    "Responsive Design",
+    "SEO"
+  ],
+  image: "/costantini-watches.png",
+  website: "https://costantiniwatches.com/"
+}
 ]
 
 export default function ProjectsPage() {
