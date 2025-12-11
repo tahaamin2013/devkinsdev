@@ -94,7 +94,24 @@ const projects = [
   ],
   image: "/costantini-watches.png",
   website: "https://costantiniwatches.com/"
+},
+{
+  id: 6,
+  title: "ConnectFlow — Video Meeting Platform (Zoom Clone)",
+  description: "A high-performance real-time video conferencing app. Features: HD video calls, screen sharing, meeting scheduling, user authentication, chat, and a clean, responsive UI. Built for smooth, low-latency communication using modern WebRTC technologies.",
+  skills: [
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "WebRTC",
+    "Real-Time Communication",
+    "Responsive Design",
+    "UI/UX"
+  ],
+  image: "/connectflow.png",
+  website: "https://connectflow-eta.vercel.app/"
 }
+
 ]
 
 export default function ProjectsPage() {
