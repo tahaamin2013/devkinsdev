@@ -63,6 +63,146 @@ const DEVELOPMENT_SECTIONS: SectionData[] = [
     ],
   },
   {
+  heading: "AI Agents",
+  color: "blue",
+  cards: [
+    {
+      title: "IBM AI Agents Guide",
+      description: "Learn what AI agents are and how they work.",
+      href: "https://www.ibm.com/think/ai-agents",
+    },
+    {
+      title: "Microsoft AI Agents for Beginners",
+      description: "Beginner-friendly AI agents learning series.",
+      href: "https://learn.microsoft.com/en-us/shows/ai-agents-for-beginners/",
+    },
+    {
+      title: "AI Agents YouTube Tutorial",
+      description: "Video tutorial explaining AI agents.",
+      href: "https://www.youtube.com/watch?v=AYQtRqW1xX4",
+    },
+    {
+      title: "Claude Prompt Engineering",
+      description: "Official guide for prompt engineering with Claude.",
+      href: "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview",
+    },
+    {
+      title: "Building Effective Agents",
+      description: "Anthropic research on effective AI agents.",
+      href: "https://www.anthropic.com/research/building-effective-agents",
+    },
+    {
+      title: "Claude AI",
+      description: "Use Claude AI assistant online.",
+      href: "https://claude.ai",
+    },
+  ],
+},
+{
+  heading: "Advanced AI Agents",
+  color: "purple",
+  cards: [
+    {
+      title: "Building AI Agents",
+      description: "Detailed guide on building AI agents.",
+      href: "https://aimultiple.com/building-ai-agents",
+    },
+    {
+      title: "AI Agents Tutorial Video",
+      description: "Step-by-step AI agents tutorial.",
+      href: "https://www.youtube.com/watch?v=szNeVMWRyzo",
+    },
+    {
+      title: "AI Agents Roadmap",
+      description: "Complete roadmap for learning AI agents.",
+      href: "https://roadmap.sh/ai-agents",
+    },
+    {
+      title: "Writing Tools for Agents",
+      description: "Anthropic engineering article for agent tools.",
+      href: "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    },
+    {
+      title: "Agentic AI Roadmap 2026",
+      description: "Roadmap for mastering Agentic AI.",
+      href: "https://machinelearningmastery.com/the-roadmap-for-mastering-agentic-ai-in-2026/",
+    },
+  ],
+},
+{
+  heading: "n8n AI Automation",
+  color: "green",
+  cards: [
+    {
+      title: "n8n AI Intro Tutorial",
+      description: "Learn AI automation with n8n.",
+      href: "https://docs.n8n.io/advanced-ai/intro-tutorial/",
+    },
+    {
+      title: "n8n AI Video Tutorial",
+      description: "Video tutorial for n8n AI workflows.",
+      href: "https://www.youtube.com/watch?v=GuaKeDS6UKU",
+    },
+    {
+      title: "n8n Automation Guide",
+      description: "Learn automation workflows using n8n.",
+      href: "https://www.youtube.com/watch?v=TKnaDGpN7Ns",
+    },
+    {
+      title: "Udemy n8n Course",
+      description: "Complete beginner course for n8n.",
+      href: "https://www.udemy.com/course/n8n-course/",
+    },
+    {
+      title: "n8n Workflow Templates",
+      description: "Ready-to-use workflow templates.",
+      href: "https://n8n.io/workflows/",
+    },
+  ],
+},
+{
+  heading: "Build AI Agents with n8n",
+  color: "orange",
+  cards: [
+    {
+      title: "First AI Agent with n8n",
+      description: "Build your first AI agent using n8n.",
+      href: "https://n8n.io/workflows/6270-build-your-first-ai-agent/",
+    },
+    {
+      title: "n8n Advanced AI Docs",
+      description: "Official advanced AI documentation for n8n.",
+      href: "https://docs.n8n.io/advanced-ai/",
+    },
+    {
+      title: "AI Agent Beginner Tutorial",
+      description: "45-minute beginner AI agent tutorial.",
+      href: "https://novatool.hashnode.dev/how-i-built-my-first-ai-agent-with-n8n-in-45-minutes-complete-beginner-tutorial-2026",
+    },
+  ],
+},
+{
+  heading: "MCP & AI Tools",
+  color: "red",
+  cards: [
+    {
+      title: "Model Context Protocol",
+      description: "Official MCP documentation website.",
+      href: "https://modelcontextprotocol.io",
+    },
+    {
+      title: "MCP Server Tutorial",
+      description: "Learn how to build MCP servers.",
+      href: "https://thenewstack.io/build-mcp-server-tutorial/",
+    },
+    {
+      title: "Claude Code MCP Setup",
+      description: "Guide for setting up MCP with Claude Code.",
+      href: "https://thepromptshelf.dev/blog/claude-code-mcp-setup-guide/",
+    },
+  ],
+},
+  {
     heading: "Graphic Designing",
     color: "blue",
     cards: [
